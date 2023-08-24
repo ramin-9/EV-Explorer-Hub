@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+    <link rel="stylesheet" href="../css/Site.css">
+    <link rel="canonical" href="https://www.faezyounut.com/rock-paper-scissors/rock-paper-scissors.html" />
+    <meta name='description' content='Rock paper scissors game.'>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1"/>
+    <link rel="icon" type="x-icon" href="../favicon.ico" >
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7396843262477040"
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- logo-->
+    <nav>
+      <div class="logo">
+         <a  href="../index.html">
+         <img id="logoimg" src="../images/logo.png" alt="logoimage" >  
+         <span class="logoname"> EV Explorer Hub </span>
+         </a>  
+      </div>
+      <div class="menu-icon">&#9776;</div>
+      <!--  end of logo -->
+      <!-- Navigation bar -->
+      <ul class="nav-item">
+         <li>
+            <a href="../About us.html" >About us</a>
+         </li>
+         <li>
+            <a href="../E-transport company section.html" >EV Companies </a>
+         </li>
+         <li>
+            <a href="../Calculator/calculator.html">Calculator</a>
+         </li>
+         <li >
+            <a href="../Quiz/index.html">Quiz</a>
+         </li>
+        
+      </ul>
+      <input type="checkbox" id="theme-toggle" hidden >
+      <label for="theme-toggle" class="theme-toggle"></label>
+   </nav>
+ 
+   
+    <p class="title">Rock Paper Scissors</p>
+    <button class="move-button js-rock-button">
+      <img src="images/rock-emoji.png" class="move-icon">
+    </button>
+
+    <button class="move-button js-paper-button">
+      <img src="images/paper-emoji.png" class="move-icon">
+    </button>
+
+    <button class="move-button js-scissors-button">
+      <img src="images/scissors-emoji.png" class="move-icon">
+    </button>
+    <button id="showHintBtn" onclick="hintBtn()">Get Hint</button>
+
+    <div id="hintModal">
+      <div class="hintContent">
+          <span class="closeHint">&times;</span>
+          <p>To use keyboard press R key for rock
+            P for paper and S for scissors.<br>
+          Game Rules: Rock beats scissors.<br>
+        Scissors beats paper.<br>
+      paper beats rock.</p>
+      </div>
+  </div>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    " class="reset-score-button js-reset-score-button">Reset Score</button>
+
+    <button class="auto-play-button" onclick="
+      autoPlay();
+    ">Auto Play</button>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7396843262477040"
+crossorigin="anonymous"></script>
+<!-- ad -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-7396843262477040"
+data-ad-slot="7744707854"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <script src="scripts/rock-paper-scissors.js"></script>
+    <script src="../scripts/first-page.js"></script>
+
+  </body>
+</html>

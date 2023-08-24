@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>EV Explorer Hub 
+      </title>
+      <link rel="stylesheet" href="css/Site.css" type="text/css"/>
+      <link rel="icon" type="x-icon" href="favicon.ico" >
+       <link rel="canonical" href="https://www.faezyounut.com/" />
+      <meta name='description' content='Electric vehicle, calculator and games'>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,
+         initial-scale=1"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7396843262477040"
+     crossorigin="anonymous"></script>
+   </head>
+   <body>
+     
+      <!-- logo-->
+      <nav>
+         <div class="logo">
+            <a  href="./index.html">
+            <img id="logoimg" src="images/logo.png" alt="logoimage" >  
+            <span class="logoname"> EV Explorer Hub </span>
+            </a>  
+         </div>
+         <div class="menu-icon">&#9776;</div>
+         <!--  end of logo -->
+         <!-- Navigation bar -->
+         <ul class="nav-item">
+            <li>
+               <a href="./About us.html" >About us</a>
+            </li>
+            <li>
+               <a href="./E-transport company section.html" >EV Companies </a>
+            </li>
+            <li>
+               <a href="./Calculator/calculator.html">Calculator</a>
+            </li>
+            <li >
+               <a href="./Quiz/index.html">Quiz</a>
+            </li>
+            
+         </ul>
+         <input type="checkbox" id="theme-toggle" hidden >
+            <label for="theme-toggle" class="theme-toggle"></label>
+         
+      </nav>
+ 
+      
+       
+      <!-- End of navigation bar -->
+              <!-- Intro text section -->
+      <div class="intro-page">   
+      <section class="Etransport">
+         <marquee behavior="slides" direction="right">
+            <p >
+               Now is the time to move to <br>
+               <span class= word >E-vehicle</span> 
+         </p>
+         </marquee>
+        
+      </section>
+      <div class="btn-grid">
+         <a href="./Form.html"><button class="purchase-btn" > <img class="purchase-img" src="images/purchase.png"></button> </a>
+         <a href="./rock-paper-scissors/rock-paper-scissors.html"><button class="rock-paper-scissors-btn" > <img src="images/rps.png" class="rps-img"></button> </a>
+      </div>
+      
+
+      
+<div class="slideshow-container">
+
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 4</div>
+     <img src="images/green environment.png" style="width:100%">
+     
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 4</div>
+     <img src="images/bus.jpg" oncontextmenu="return false;" style="width:100%">
+     
+   </div>
+
+   <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/motor.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/redcar.avif"  style="width:100%">
+      
+    </div>
+
+   
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+   
+   </div>
+   <br>
+   
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+     <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span> 
+     <span class="dot" onclick="currentSlide(4)"></span>
+   </div>
+  
+      <div class="youtube-intro-page" >  <iframe width="1000" height="600"  src="https://www.youtube.com/embed/F1fyJUMz8ro">
+      </iframe>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7396843262477040"
+      crossorigin="anonymous"></script>
+ <!-- ad -->
+ <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-7396843262477040"
+      data-ad-slot="7744707854"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+    </div>
+    
+      <!-- Socail media section  -->
+      <section class="social">
+         <p>Connect with us on Social Media</p>
+         <div class="socicons">
+            <a href="https://www.youtube.com/@raminutd/featured"  target="_blank" class="fa fa-youtube" id="youtube"> </a>
+            <a href="https://twitter.com/RaminUNT" target="_parent" class="fa fa-twitter" id="twitter"></a>
+            <a href="#" class="fa fa-instagram" target="_self" id="instagram"></a>
+            <a href="https://github.com/ramin-9" class="fa fa-github" target="_top" id="github"></a>
+            <a href="privacy-policy.html" class="fa fa-address-card-o"
+            id="privacy-policy"> </a>
+         </div>
+      </section>
+
+   </div>
+      <script> 
+      // slide for slide picture
+         let slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+         }
+         </script>
+      <script src="scripts/first-page.js"></script>
+      <!-- End of social media section  -->
+   </body>
+</html>

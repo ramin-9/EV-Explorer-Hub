@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+
+:root {
+    --bold-font: 600;
+    --light: #f6f6f9;
+    --dark: #363949;
+    --danger: #D32F2F;
+    --success: #388E3C;
+    --grey: #eee;
+    --primary: #1976D2; 
+}
+
+
+/*************************************************/
+/*positioning and sizing image*/
+
+.vehicleimg {
+    padding: 3px;
+    width: 200px;
+    
+}
+
+
+/*************************************************/
+
+
+/* Large rounded green border */
+
+hr.green {
+    border: 10px solid var(--light);
+    border-radius: 5px;
+}
+
+
+/*************************************************/
+
+
+/* text allignment and decorate*/
+
+p {
+    
+    font-size: medium;
+    font-style: normal;
+   
+}
+
+pre {
+    white-space: pre-wrap;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 0;
+    font-family: "Roboto", sans-serf;
+    line-height: 150%;
+    
+}
+
+body {
+    font-family: "Roboto", sans-serf;
+    background: var(--grey);
+    color: var(--dark);
+    margin: 0%;
+}
+
+
+/*End of text alignment and decoration
+
+/*remove bullet piont for navigation bar and lists*/
+
+ul,
+ol li {
+    list-style-type: none;
+ 
+}
+
+
+/*Change colour to green */
+
+a {
+    text-decoration: none;
+    color: var(--success);
+}
+
+
+/*change link colour to red when hover the mosue near links */
+
+a:hover {
+    color: var(--danger);
+}
+
+.name {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+}
+
+
+/*************************************************/
+
+
+/*Navigation bar and navigation link CSS*/
+
+nav {
+    background: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+   
+    
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.nav-item li {
+    padding: 0 15px;
+  }
+  
+  .nav-item li a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default for larger screens */
+    font-size: 20px; /* Set the font size to adjust the size of the icon */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    padding: 10px;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--dark); /* You can change the color to match your design */
+  }
+  
+  
+.purchase-btn , 
+.rock-paper-scissors-btn{
+  text-align: center;
+  font-size: 16px;
+  margin: 14px 12px;
+  cursor: pointer;
+  border: none;
+
+}
+.rps-img , .purchase-img{
+    height: 100px;
+    width: 100px;
+}
+/*************************************************/
+
+
+/*design about us section font, background and so on*/
+
+.about {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+   
+}
+
+
+
+
+
+/*************************************************/
+
+
+/* design image of first or welcoming page*/
+
+
+
+
+.Etransport {
+    font-size: x-large;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.word {
+    color: var(--success);
+    text-align: center;
+}
+
+.youtube-intro-page{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+   
+
+}
+
+
+/*************************************************/
+
+
+/*image of logo*/
+
+#logoimg {
+    width: 70px;
+    height: 40px;
+    border: none;
+}
+
+.logoname {
+    font-size: x-large;
+    color: var(--dark);
+    position: absolute;
+    top: 20px;
+    font-family: fantasy;
+}
+
+
+/****************************************/
+
+
+/* footnote*/
+
+a.fnref {
+    counter-increment: footnote;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    outline: none;
+}
+
+a.fnref::after {
+    content: '[' counter(footnote) ']';
+    vertical-align: super;
+    font-size: 80%;
+    margin-left: 0.2ex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fnret {
+    text-decoration: none;
+    font-size: larger;
+}
+
+div.footnotes {
+    margin: 4em 2em 0 1em;
+    font-size: 80%;
+    text-align: center;
+}
+
+div.footnotes li {
+    padding: 1ex;
+}
+
+div.footnotes li p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div.footnotes ol {
+    list-style: decimal outside;
+}
+
+
+
+
+/*end of footnote style*/
+
+#h1report {
+    text-align: center;
+}
+
+#icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    color: var(--success);
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.vehicle {
+    margin: 3% 0 3% 0;
+    gap: 1.5rem;
+}
+
+
+/*Social media desion */
+
+.social {
+    text-align: left;
+    margin: 2rem ;
+}
+
+.socicons {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+#youtube, #twitter, #instagram,  #github, #privacy-policy{
+    font-size:  4em;
+    margin: 0 20px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 20px var(--danger), 0 0 40px var(--danger), 0 0 60px var(--danger), 0 0 80 var(--danger);
+
+}
+#twitter{
+    animation-delay: 0.3s;
+} 
+#instagram{
+    animation-delay: 0.7s;
+} 
+#github{animation-delay: 0.1s;
+}
+@keyframes animate {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/********************************************/
+
+
+/*scroll up design and position*/
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/**********************************************/
+
+
+/*product desion for each section*/
+
+.nissan {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.tesla {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.hyundai {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.dyson {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.volvo {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+
+/***************************************************/
+
+
+/*design for report section*/
+
+
+.report-content {
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 5px;
+    
+
+}
+
+/*slide show container design*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #1544df;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+/*Representative design for small scrren such as mobile phone */
+
+@media (max-width: 800px) {
+    body {
+        
+        font-size: 80%;
+        line-height: 1.2;
+    }
+    
+   
+    .nav-item{
+       display: none;
+        flex-direction: column;
+        background-color: var(--light);
+        position: absolute;
+        top: 73px;
+        left: 0;
+        width: 100%;
+        font-size: x-large;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav-item li{
+        margin-bottom: 2%;
+    }
+    .nav-item li a:hover{
+        text-decoration: underline;
+
+    }
+
+    
+     .nav-item.active {
+        display: flex;
+      }
+      .menu-icon {
+        display: block; /* Show the menu icon for mobile devices */
+        position: relative;
+        left: 30%;
+      }
+      .intro-page{
+        margin-top: 30%;
+      }
+      .about{
+        margin-top: 30%;
+      }
+      .Etransport{
+        display: none;
+      }
+
+      .vehicle{
+        margin-top: 30%;
+      }
+      .privacy-policy{
+        margin-top: 30%;
+        
+    }
+      .btn-grid{
+        display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto;
+      }
+      .youtube-intro-page iframe{
+        width: 500px;
+        height: 300px;
+     }
+      }
+
+    
+
+
+/*Representative design for printing remove navigation bar and footnote changing font size and so on*/
+
+@media print {
+    .green,
+    .nav-item,
+    .footnotes,
+    .scroll-up {
+        display: none;
+    }
+    body {
+        font: 10pt Georgia, "Times New Roman", Times, serif;
+        line-height: 2;
+        page-break-inside: auto;
+        /* or 'auto' */
+    }
+    * {
+        background-color: var(--light);
+    }
+    * {
+        background-image: none;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+nav .theme-toggle{
+    display: block;
+    min-width: 50px;
+    height: 25px;
+    background: var(--grey);
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+}
+
+nav .theme-toggle::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: calc(25px - 4px);
+    background: var(--primary);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+nav #theme-toggle:checked+.theme-toggle::before{
+    left: calc(100% - (25px - 4px) - 2px);
+}
+
+body.dark{
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb;
+}
+
+.privacy-policy{
+    margin-left: 1%;
+    
+}
