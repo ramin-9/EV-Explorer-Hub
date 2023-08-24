@@ -1,6 +1,0 @@
-User-agent: *
-User-agent: Bingbot
-
-Crawl-delay: 1
-
-Sitemap: https://www.faezyounut.com/index.html
