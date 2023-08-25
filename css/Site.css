@@ -11,97 +11,27 @@
     --grey: #eee;
     --primary: #1976D2; 
 }
-
-
-/*************************************************/
-/*positioning and sizing image*/
-
-.vehicleimg {
-    padding: 3px;
-    width: 200px;
-    
-}
-
-
-/*************************************************/
-
-
-/* Large rounded green border */
-
-hr.green {
-    border: 10px solid var(--light);
-    border-radius: 5px;
-}
-
-
-/*************************************************/
-
-
 /* text allignment and decorate*/
 
-p {
-    
-    font-size: medium;
-    font-style: normal;
-   
-}
+
 
 pre {
     white-space: pre-wrap;
     padding-left: 2em;
     padding-right: 2em;
     margin-left: 0;
-    font-family: "Roboto", sans-serf;
+    font-family: "verdana",sans-serf;
     line-height: 150%;
     
 }
 
 body {
-    font-family: "Roboto", sans-serf;
+    font-family: "verdana",sans-serf;
     background: var(--grey);
     color: var(--dark);
     margin: 0%;
+    font-size: large;
 }
-
-
-/*End of text alignment and decoration
-
-/*remove bullet piont for navigation bar and lists*/
-
-ul,
-ol li {
-    list-style-type: none;
- 
-}
-
-
-/*Change colour to green */
-
-a {
-    text-decoration: none;
-    color: var(--success);
-}
-
-
-/*change link colour to red when hover the mosue near links */
-
-a:hover {
-    color: var(--danger);
-}
-
-.name {
-    display: grid;
-    padding: 2rem;
-    grid-template-columns: 300px 1fr;
-    gap: 1rem;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font: 500 100%/1.5 system-ui;
-}
-
-
-/*************************************************/
 
 
 /*Navigation bar and navigation link CSS*/
@@ -149,23 +79,31 @@ nav {
   }
   
   
-.purchase-btn , 
-.rock-paper-scissors-btn{
-  text-align: center;
-  font-size: 16px;
-  margin: 14px 12px;
-  cursor: pointer;
-  border: none;
 
+
+/*************************************************/
+/* comapnies section  */
+/*positioning and sizing image*/
+
+.vehicleimg {
+    padding: 3px;
+    width: 200px;
+    
 }
-.rps-img , .purchase-img{
-    height: 100px;
-    width: 100px;
+/* Large rounded green border */
+
+hr.green {
+    border: 10px solid var(--light);
+    border-radius: 5px;
+}
+/*remove bullet piont for navigation bar and lists*/
+ul,
+ol li {
+    list-style-type: none;
+ 
 }
 /*************************************************/
-
-
-/*design about us section font, background and so on*/
+/*design about us section */
 
 .about {
     
@@ -175,17 +113,23 @@ nav {
     gap: 1.5rem;
    
 }
-
-
-
-
-
 /*************************************************/
-
-
 /* design image of first or welcoming page*/
+/*image of logo*/
 
+#logoimg {
+    width: 70px;
+    height: 40px;
+    border: none;
+}
 
+.logoname {
+    font-size: x-large;
+    color: var(--dark);
+    position: absolute;
+    top: 20px;
+    font-family: fantasy;
+}
 
 
 .Etransport {
@@ -206,205 +150,18 @@ nav {
    
 
 }
-
-
-/*************************************************/
-
-
-/*image of logo*/
-
-#logoimg {
-    width: 70px;
-    height: 40px;
-    border: none;
-}
-
-.logoname {
-    font-size: x-large;
-    color: var(--dark);
-    position: absolute;
-    top: 20px;
-    font-family: fantasy;
-}
-
-
-/****************************************/
-
-
-/* footnote*/
-
-a.fnref {
-    counter-increment: footnote;
-    text-decoration: none;
-    color: inherit;
-    cursor: default;
-    outline: none;
-}
-
-a.fnref::after {
-    content: '[' counter(footnote) ']';
-    vertical-align: super;
-    font-size: 80%;
-    margin-left: 0.2ex;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.fnret {
-    text-decoration: none;
-    font-size: larger;
-}
-
-div.footnotes {
-    margin: 4em 2em 0 1em;
-    font-size: 80%;
-    text-align: center;
-}
-
-div.footnotes li {
-    padding: 1ex;
-}
-
-div.footnotes li p:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-div.footnotes ol {
-    list-style: decimal outside;
-}
-
-
-
-
-/*end of footnote style*/
-
-#h1report {
-    text-align: center;
-}
-
-#icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 48px;
-    color: var(--success);
-}
-
-section {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-}
-
-.vehicle {
-    margin: 3% 0 3% 0;
-    gap: 1.5rem;
-}
-
-
-/*Social media desion */
-
-.social {
-    text-align: left;
-    margin: 2rem ;
-}
-
-.socicons {
-    font-size: 1.3rem;
-    margin: 10px;
-}
-#youtube, #twitter, #instagram,  #github, #privacy-policy{
-    font-size:  4em;
-    margin: 0 20px;
-    animation: animate 3s linear infinite;
-    text-shadow: 0 0 20px var(--danger), 0 0 40px var(--danger), 0 0 60px var(--danger), 0 0 80 var(--danger);
+.purchase-btn , 
+.rock-paper-scissors-btn{
+  text-align: center;
+  font-size: 16px;
+  margin: 14px 12px;
+  cursor: pointer;
+  border: none;
 
 }
-#twitter{
-    animation-delay: 0.3s;
-} 
-#instagram{
-    animation-delay: 0.7s;
-} 
-#github{animation-delay: 0.1s;
-}
-@keyframes animate {
-    from{
-        filter: hue-rotate(0deg);
-    }
-    to{
-        filter: hue-rotate(360deg);
-    }
-}
-
-/********************************************/
-
-
-/*scroll up design and position*/
-
-.scroll-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 3%;
-    cursor: pointer;
-}
-
-.up-arrow {
-    width: 3rem;
-    height: 3rem;
-}
-
-
-/**********************************************/
-
-
-/*product desion for each section*/
-
-.nissan {
-    border-style: groove;
-    border-color: var(--light);
-    border-radius: 8px;
-}
-
-.tesla {
-    border-style: groove;
-    border-color: var(--light);
-    border-radius: 8px;
-}
-
-.hyundai {
-    border-style: groove;
-    border-color: var(--light);
-    border-radius: 8px;
-}
-
-.dyson {
-    border-style: groove;
-    border-color: var(--light);
-    border-radius: 8px;
-}
-
-.volvo {
-    border-style: groove;
-    border-color: var(--light);
-    border-radius: 8px;
-}
-
-
-/***************************************************/
-
-
-/*design for report section*/
-
-
-.report-content {
-    border-style: solid;
-    border-color: var(--light);
-    border-radius: 5px;
-    
-
+.rps-img , .purchase-img{
+    height: 100px;
+    width: 100px;
 }
 
 /*slide show container design*/
@@ -479,15 +236,230 @@ section {
     to {opacity: 1}
   }
 
+/*Social media desion */
+
+.social {
+    text-align: left;
+    margin: 2rem ;
+}
+
+.socicons {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+#youtube, #twitter, #instagram,  #github, #privacy-policy{
+    font-size:  4em;
+    margin: 0 20px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 20px var(--danger), 0 0 40px var(--danger), 0 0 60px var(--danger), 0 0 80 var(--danger);
+
+}
+#twitter{
+    animation-delay: 0.3s;
+} 
+#instagram{
+    animation-delay: 0.7s;
+} 
+#github{animation-delay: 0.1s;
+}
+@keyframes animate {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
 
 
 
+
+/***************************************/
+
+/* Report page */
+/* footnote*/
+
+a.fnref {
+    counter-increment: footnote;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    outline: none;
+}
+
+a.fnref::after {
+    content: '[' counter(footnote) ']';
+    vertical-align: super;
+    font-size: 80%;
+    margin-left: 0.2ex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fnret {
+    text-decoration: none;
+    font-size: larger;
+}
+
+div.footnotes {
+    margin: 4em 2em 0 1em;
+    font-size: 80%;
+    text-align: center;
+}
+
+div.footnotes li {
+    padding: 1ex;
+}
+
+div.footnotes li p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div.footnotes ol {
+    list-style: decimal outside;
+}
+
+
+/*Change colour to green */
+
+a {
+    text-decoration: none;
+    color: var(--success);
+}
+
+
+/*change link colour to red when hover the mosue near links */
+
+a:hover {
+    color: var(--danger);
+}
+
+#h1report {
+    text-align: center;
+}
+#icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    color: var(--success);
+}
+.report-content {
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 5px;
+    
+
+}
+
+/************************************/
+/*product desion for each section*/
+
+.nissan {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.tesla {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.hyundai {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.dyson {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+
+.volvo {
+    border-style: groove;
+    border-color: var(--light);
+    border-radius: 8px;
+}
+section {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.vehicle {
+    margin: 3% 0 3% 0;
+    gap: 1.5rem;
+}
+
+/*scroll up design and position*/
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+/***************************************************/
+.privacy-policy{
+    margin-left: 1%;
+    
+}
+
+/***************************************************/
+/* dark mode  */
+
+nav .theme-toggle{
+    display: block;
+    min-width: 50px;
+    height: 25px;
+    background: var(--grey);
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+}
+
+nav .theme-toggle::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: calc(25px - 4px);
+    background: var(--primary);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+nav #theme-toggle:checked+.theme-toggle::before{
+    left: calc(100% - (25px - 4px) - 2px);
+}
+
+body.dark{
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb;
+}
+
+
+/* ********************************************** */
 /*Representative design for small scrren such as mobile phone */
 
 @media (max-width: 800px) {
     body {
         
-        font-size: 80%;
+        font-size: 90%;
         line-height: 1.2;
     }
     
@@ -549,10 +521,6 @@ section {
         height: 300px;
      }
       }
-
-    
-
-
 /*Representative design for printing remove navigation bar and footnote changing font size and so on*/
 
 @media print {
@@ -578,41 +546,4 @@ section {
         width: 200px;
         height: 200px;
     }
-}
-
-nav .theme-toggle{
-    display: block;
-    min-width: 50px;
-    height: 25px;
-    background: var(--grey);
-    cursor: pointer;
-    position: relative;
-    border-radius: 25px;
-}
-
-nav .theme-toggle::before{
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    width: calc(25px - 4px);
-    background: var(--primary);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-nav #theme-toggle:checked+.theme-toggle::before{
-    left: calc(100% - (25px - 4px) - 2px);
-}
-
-body.dark{
-    --light: #181a1e;
-    --grey: #25252c;
-    --dark: #fbfbfb;
-}
-
-.privacy-policy{
-    margin-left: 1%;
-    
 }
