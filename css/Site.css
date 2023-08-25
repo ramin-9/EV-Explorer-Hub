@@ -150,8 +150,7 @@ ol li {
    
 
 }
-.purchase-btn , 
-.rock-paper-scissors-btn{
+.purchase-btn {
   text-align: center;
   font-size: 16px;
   margin: 14px 12px;
@@ -159,7 +158,7 @@ ol li {
   border: none;
 
 }
-.rps-img , .purchase-img{
+.purchase-img{
     height: 100px;
     width: 100px;
 }
@@ -451,7 +450,20 @@ body.dark{
     --grey: #25252c;
     --dark: #fbfbfb;
 }
+/* ********************************************** */
+/* utilities  */ 
+.rock-paper-scissors-btn{
+  text-align: center;
+  font-size: 16px;
+  margin: 14px 12px;
+  cursor: pointer;
+  border: none;
 
+}
+.rps-img {
+    height: 200px;
+    width: 200px;
+}
 
 /* ********************************************** */
 /*Representative design for small scrren such as mobile phone */
@@ -511,15 +523,19 @@ body.dark{
         margin-top: 30%;
         
     }
-      .btn-grid{
+      .btn-grid, .utility-grid{
         display: grid;
-  column-gap: 20px;
-  grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        grid-template-columns: auto auto auto;
       }
       .youtube-intro-page iframe{
         width: 500px;
         height: 300px;
      }
+     .rps-img {
+        height: 100px;
+        width: 100px;
+    }
       }
 /*Representative design for printing remove navigation bar and footnote changing font size and so on*/
 
