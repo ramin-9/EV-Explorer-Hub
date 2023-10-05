@@ -9,8 +9,9 @@
     --danger: #D32F2F;
     --success: #388E3C;
     --grey: #eee;
-    --primary: #1976D2; 
+    --primary: #1976D2;
 }
+
 /* text allignment and decorate*/
 
 
@@ -20,13 +21,13 @@ pre {
     padding-left: 2em;
     padding-right: 2em;
     margin-left: 0;
-    font-family: "verdana",sans-serf;
+    font-family: "verdana", sans-serf;
     line-height: 150%;
-    
+
 }
 
 body {
-    font-family: "verdana",sans-serf;
+    font-family: "verdana", sans-serf;
     background: var(--grey);
     color: var(--dark);
     margin: 0%;
@@ -42,8 +43,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-   
-    
+
+
 }
 
 .nav-item {
@@ -51,34 +52,40 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    
+
 }
+
 .nav-item li {
     padding: 0 15px;
-  }
-  
-  .nav-item li a {
+}
+
+.nav-item li a {
     color: var(--dark);
     text-decoration: none;
-  }
+}
 
 
 .menu-icon {
-    display: none; /* Hide the menu icon by default for larger screens */
-    font-size: 20px; /* Set the font size to adjust the size of the icon */
-    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    display: none;
+    /* Hide the menu icon by default for larger screens */
+    font-size: 20px;
+    /* Set the font size to adjust the size of the icon */
+    cursor: pointer;
+    /* Add a pointer cursor to indicate it's clickable */
     padding: 10px;
-  }
-  .menu-icon::before,
-  .menu-icon::after {
+}
+
+.menu-icon::before,
+.menu-icon::after {
     content: "";
     display: block;
     width: 20px;
     height: 2px;
-    background-color: var(--dark); /* You can change the color to match your design */
-  }
-  
-  
+    background-color: var(--dark);
+    /* You can change the color to match your design */
+}
+
+
 
 
 /*************************************************/
@@ -88,31 +95,35 @@ nav {
 .vehicleimg {
     padding: 3px;
     width: 200px;
-    
+
 }
+
 /* Large rounded green border */
 
 hr.green {
     border: 10px solid var(--light);
     border-radius: 5px;
 }
+
 /*remove bullet piont for navigation bar and lists*/
 ul,
 ol li {
     list-style-type: none;
- 
+
 }
+
 /*************************************************/
 /*design about us section */
 
 .about {
-    
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
-   
+
 }
+
 /*************************************************/
 /* design image of first or welcoming page*/
 /*image of logo*/
@@ -143,22 +154,30 @@ ol li {
     text-align: center;
 }
 
-.youtube-intro-page{
+.youtube-intro-page {
     max-width: 1000px;
     position: relative;
     margin: auto;
-   
+
 
 }
+
+.article {
+
+    margin-bottom: 5%;
+    text-align: center;
+}
+
 .purchase-btn {
-  text-align: center;
-  font-size: 16px;
-  margin: 14px 12px;
-  cursor: pointer;
-  border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 12px;
+    cursor: pointer;
+    border: none;
 
 }
-.purchase-img{
+
+.purchase-img {
     height: 100px;
     width: 100px;
 }
@@ -169,10 +188,11 @@ ol li {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -185,31 +205,32 @@ ol li {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #1544df;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -218,54 +239,71 @@ ol li {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /*Social media desion */
 
 .social {
     text-align: left;
-    margin: 2rem ;
+    margin: 2rem;
 }
 
 .socicons {
     font-size: 1.3rem;
     margin: 10px;
 }
-#youtube, #twitter, #instagram,  #github, #privacy-policy{
-    font-size:  4em;
+
+#youtube,
+#twitter,
+#instagram,
+#github,
+#privacy-policy {
+    font-size: 4em;
     margin: 0 20px;
     animation: animate 3s linear infinite;
     text-shadow: 0 0 20px var(--danger), 0 0 40px var(--danger), 0 0 60px var(--danger), 0 0 80 var(--danger);
 
 }
-#twitter{
+
+#twitter {
     animation-delay: 0.3s;
-} 
-#instagram{
-    animation-delay: 0.7s;
-} 
-#github{animation-delay: 0.1s;
 }
+
+#instagram {
+    animation-delay: 0.7s;
+}
+
+#github {
+    animation-delay: 0.1s;
+}
+
 @keyframes animate {
-    from{
+    from {
         filter: hue-rotate(0deg);
     }
-    to{
+
+    to {
         filter: hue-rotate(360deg);
     }
 }
@@ -337,6 +375,7 @@ a:hover {
 #h1report {
     text-align: center;
 }
+
 #icon {
     display: block;
     margin-left: auto;
@@ -344,11 +383,12 @@ a:hover {
     font-size: 48px;
     color: var(--success);
 }
+
 .report-content {
     border-style: solid;
     border-color: var(--light);
     border-radius: 5px;
-    
+
 
 }
 
@@ -384,6 +424,7 @@ a:hover {
     border-color: var(--light);
     border-radius: 8px;
 }
+
 section {
     margin-left: auto;
     margin-right: auto;
@@ -411,15 +452,23 @@ section {
 }
 
 /***************************************************/
-.privacy-policy{
-    margin-left: 1%;
-    
+.privacy-policy {
+    margin-left: 2%;
+
+}
+
+.why-EV-page {
+    margin-left: 2%;
+
+
+
+
 }
 
 /***************************************************/
 /* dark mode  */
 
-nav .theme-toggle{
+nav .theme-toggle {
     display: block;
     min-width: 50px;
     height: 25px;
@@ -429,7 +478,7 @@ nav .theme-toggle{
     border-radius: 25px;
 }
 
-nav .theme-toggle::before{
+nav .theme-toggle::before {
     content: "";
     position: absolute;
     top: 2px;
@@ -441,25 +490,27 @@ nav .theme-toggle::before{
     transition: all 0.3s ease;
 }
 
-nav #theme-toggle:checked+.theme-toggle::before{
+nav #theme-toggle:checked+.theme-toggle::before {
     left: calc(100% - (25px - 4px) - 2px);
 }
 
-body.dark{
+body.dark {
     --light: #181a1e;
     --grey: #25252c;
     --dark: #fbfbfb;
 }
+
 /* ********************************************** */
-/* utilities  */ 
-.rock-paper-scissors-btn{
-  text-align: center;
-  font-size: 16px;
-  margin: 14px 12px;
-  cursor: pointer;
-  border: none;
+/* utilities  */
+.rock-paper-scissors-btn {
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 12px;
+    cursor: pointer;
+    border: none;
 
 }
+
 .rps-img {
     height: 200px;
     width: 200px;
@@ -470,14 +521,14 @@ body.dark{
 
 @media (max-width: 800px) {
     body {
-        
+
         font-size: 90%;
         line-height: 1.2;
     }
-    
-   
-    .nav-item{
-       display: none;
+
+
+    .nav-item {
+        display: none;
         flex-direction: column;
         background-color: var(--light);
         position: absolute;
@@ -487,77 +538,95 @@ body.dark{
         font-size: x-large;
         justify-content: space-between;
         align-items: center;
-        
+
     }
-    .nav-item li{
+
+    .nav-item li {
         margin-bottom: 2%;
     }
-    .nav-item li a:hover{
+
+    .nav-item li a:hover {
         text-decoration: underline;
 
     }
 
-    
-     .nav-item.active {
+
+    .nav-item.active {
         display: flex;
-      }
-      .menu-icon {
-        display: block; /* Show the menu icon for mobile devices */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show the menu icon for mobile devices */
         position: relative;
         left: 30%;
-      }
-      .intro-page{
-        margin-top: 30%;
-      }
-      .about{
-        margin-top: 30%;
-      }
-      .Etransport{
-        display: none;
-      }
-
-      .vehicle{
-        margin-top: 30%;
-      }
-      .privacy-policy{
-        margin-top: 30%;
-        
     }
-      .btn-grid, .utility-grid{
+
+    .intro-page {
+        margin-top: 30%;
+    }
+
+    .about {
+        margin-top: 30%;
+    }
+
+    .Etransport {
+        display: none;
+    }
+
+    .vehicle {
+        margin-top: 30%;
+    }
+
+    .privacy-policy {
+        margin-top: 30%;
+
+    }
+
+    .btn-grid,
+    .utility-grid {
         display: grid;
         column-gap: 20px;
         grid-template-columns: auto auto auto;
-      }
-      .youtube-intro-page iframe{
+    }
+
+    .youtube-intro-page iframe {
         width: 500px;
         height: 300px;
-     }
-     .rps-img {
+    }
+
+    .rps-img {
         height: 100px;
         width: 100px;
     }
-      }
+}
+
 /*Representative design for printing remove navigation bar and footnote changing font size and so on*/
 
 @media print {
+
     .green,
     .nav-item,
     .footnotes,
     .scroll-up {
         display: none;
     }
+
     body {
         font: 10pt Georgia, "Times New Roman", Times, serif;
         line-height: 2;
         page-break-inside: auto;
         /* or 'auto' */
     }
+
     * {
         background-color: var(--light);
     }
+
     * {
         background-image: none;
     }
+
     img {
         width: 200px;
         height: 200px;
