@@ -162,7 +162,7 @@ ol li {
 
 }
 
-.article {
+.article-btn {
 
     margin-bottom: 5%;
     text-align: center;
@@ -453,12 +453,13 @@ section {
 
 /***************************************************/
 .privacy-policy {
-    margin-left: 2%;
+    margin-left: 1%;
 
 }
 
 .why-EV-page {
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-top: 1%;
 
 
 
