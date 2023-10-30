@@ -587,12 +587,12 @@ body.dark {
     .btn-grid,
     .utility-grid {
         display: grid;
-        column-gap: 20px;
+        column-gap: 15px;
         grid-template-columns: auto auto auto;
     }
 
     .youtube-intro-page iframe {
-        width: 500px;
+        width: 450px;
         height: 300px;
     }
 
