@@ -1,4 +1,4 @@
 This is a Brave Creators publisher verification file.
 
 Domain: faezyounut.com
-Token: 18630e34b02a46bfd554a5f9b545d2592dc0fdf3fa7840088e0e25e954d864c2
+Token: 936ffda0933c63718f8564dd9d31d9fc42210cb86198480038caadcc5a359cd6
